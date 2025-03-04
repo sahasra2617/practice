@@ -1,0 +1,82 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../photos/login.avif") no-repeat center;
+    background-size: cover;
+  }
+  
+  .login-form {
+    background: rgb(244, 191, 191);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+  text-align: center;
+  width: 350px;
+  animation: fadeIn 1s ease-in-out;
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  }
+  
+  .login-form input {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: cursive;
+  }
+  
+  .login-form button {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 14px;
+    font-size: 18px;
+    font-family: cursive;
+  }
+  .login-form button:hover{
+    background: #4040b9;
+    transform: scale(1.1);
+   }
+   
+  .switch-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .switch-link span {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .switch-link span:hover {
+    color: darkblue;
+  }
+
+  .login-container .icon{
+    font-size: 25px;
+  margin-right: 10px;
+  color: #090909;
+  /* margin-bottom: 7px; */
+  }
+
+  .login-container-h3{
+   font-family:cursive;
+   margin-bottom: 5px;
+  }
+
+  .login_h2{
+    font-family:cursive;
+    margin-bottom: 5px;
+   }
+
+  
