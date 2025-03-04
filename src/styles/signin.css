@@ -1,87 +1,154 @@
 .signin-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url("../photos/login.avif") no-repeat center;
-    background-size: cover;
-  }
-  
-  .signin-form {
-    background: rgb(244, 194, 194);
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 610px;
+  background: url("../photos/login.avif") no-repeat center;
+  background-size: cover;
+}
+
+.signin-form {
+  background: rgb(244, 194, 194);
+  padding: 30px;
+  border-radius: 15px;
   text-align: center;
   width: 350px;
   animation: fadeIn 1s ease-in-out;
   backdrop-filter: blur(10px);
   font-size: 20px;
-  }
-  .input-container{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    box-shadow: none;
-  }
-  
-  .signin-form input {
-    /* display: block; */
-    width: 70%;
-    padding: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    font-family:cursive;
-    font-size: 15px;
-  }
-  
-  .signin-form button {
-    background:red;
-    color: white;
-    border-radius: 30px;
-    margin-top: 15px;
-    padding: 8px;
-    border: none;
-    cursor: pointer;
-    font-family:cursive;
-    font-size: 18px;
-  }
+}
 
-  .signin-form button:hover{
-      background: #4040b9;
-      transform: scale(1.1);
-  }
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .switch-link {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #161616;
-  }
-  
-  .switch-link span {
-    color: rgb(18, 18, 19);
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  
-  .switch-link span:hover {
-    color: darkblue;
-  }
-  .signin-container .icon{
-    font-size: 23px;
+.signin-form input {
+  width: 70%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+.signin-form button {
+  background: red;
+  color: white;
+  border-radius: 30px;
+  margin-top: 15px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 18px;
+}
+
+.signin-form button:hover {
+  background: #1a73e8;
+  transform: scale(1.1);
+}
+
+.switch-link {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #161616;
+}
+
+.switch-link span {
+  color: rgb(18, 18, 19);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.switch-link span:hover {
+  color: #1a73e8;
+}
+
+.signin-container .icon {
+  font-size: 23px;
   margin-right: 10px;
   color: #090909;
   margin-bottom: 7px;
+}
+
+p.switch-link {
+  color: #090909;
+  font-size: 18px;
+}
+
+.signin-container-h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* ✅ Media Queries for Responsiveness */
+
+/* Small devices (phones, max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .signin-form {
+      width: 90%;
+      padding: 20px;
+      font-size: 18px;
   }
 
-  p.switch-link{
-    color: #090909;
-    font-size: 18px;
+  .signin-form input {
+      width: 80%;
+      font-size: 16px;
   }
 
-  .signin-container-h2{
-    font-size: 28px;
-    margin-bottom: 20px;
+  .signin-form button {
+      font-size: 16px;
+      padding: 8px;
   }
+
+  .icon {
+      font-size: 22px;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .signin-form {
+      width: 80%;
+      font-size: 19px;
+  }
+
+  .signin-form input {
+      width: 75%;
+      font-size: 17px;
+  }
+
+  .signin-form button {
+      font-size: 17px;
+      padding: 9px;
+  }
+
+  .icon {
+      font-size: 25px;
+  }
+}
+
+/* Laptops (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  .signin-form {
+      width: 70%;
+      font-size: 20px;
+  }
+
+  .signin-form input {
+      width: 70%;
+      font-size: 18px;
+  }
+
+  .signin-form button {
+      font-size: 18px;
+      padding: 10px;
+  }
+
+  .icon {
+      font-size: 28px;
+  }
+}
